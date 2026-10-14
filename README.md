@@ -1,5 +1,7 @@
 # DevSecOps Lab 00 — Secure Foundation
 
+![CI](https://github.com/VVovnenciuc/devsecops-lab00-foundation/actions/workflows/ci.yml/badge.svg)
+
 Repo de bază pentru portofoliul DevSecOps: un CLI Python (`headercheck`) care verifică
 header-ele HTTP de securitate, construit cu controale de securitate „shift-left”.
 
@@ -19,4 +21,7 @@ uv run headercheck https://example.com
 Exit codes: `0` = toate header-ele prezente, `1` = lipsesc header-e, `2` = eroare.
 
 ## Ce aș face diferit în producție
-_(se completează la finalul lab-ului)_
+- aprobări obligatorii de la cel puțin 1 reviewer
+- runner-e self-hosted efemere
+- semnarea artefactelor (Lab 1)
+- scanare de secrete pe toată organizația
